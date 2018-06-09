@@ -1,0 +1,14 @@
+# Site settings
+title: Toolkit for YNAB | Unofficial Browser Extension for You Need a Budget
+email: kevinbrowntech@gmail.com
+description: >
+  A free, open source browser extension for You Need a Budget, adding 
+  tweaks and additional features for a more customizable experience.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://toolkitforynab.com" # the base hostname & protocol for your site
+twitter_username: kevinbrowntech
+github_username:  blargity
+
+# GitHub Pages Redirects
+gems:
+  - jekyll-redirect-from
