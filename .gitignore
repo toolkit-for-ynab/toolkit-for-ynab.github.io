@@ -1,5 +1,7 @@
+node_modules
 .sass-cache/*
-_site/*
+.jekyll-cache
+_site
 .DS_Store
 output/*
 certificates/*
