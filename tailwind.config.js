@@ -7,13 +7,14 @@ module.exports = {
     },
     screens: {
       xs: "375px",
-      ...defaultTheme.screens
+      ...defaultTheme.screens,
+      xxl: '1440px'
     },
 
     colors: {
       transparent: "transparent",
       black: "#000000",
-      "black-transparent": "rgba(0,0,0,0.5)",
+      "black-transparent": "rgba(0,0,0,0.8)",
       white: "#fefefe",
       primary: "#3abc4a",
       "primary-dark": "#269234",
@@ -25,7 +26,8 @@ module.exports = {
     },
 
     translate: {
-      "50": "-50%",
+      0: "0%",
+      50: "-50%",
     },
 
     transitionProperty: {
@@ -68,6 +70,9 @@ module.exports = {
       inset: {
         "50": "50%"
       },
+      minHeight: {
+        "900": "900px"
+      }
     }
   },
   variants: ['responsive', 'hover', 'focus', 'group-hover', 'last'],
