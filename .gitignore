@@ -3,6 +3,7 @@ node_modules
 .jekyll-cache
 _site
 .DS_Store
+Gemfile.lock
 output/*
 certificates/*
 *.pyc
