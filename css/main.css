@@ -6,5 +6,5 @@
 @import "tailwindcss/utilities";
 
 html {
-    @apply font-body;
+    @apply font-body antialiased;
 }
