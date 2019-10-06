@@ -19,6 +19,7 @@ module.exports = {
       primary: "#3abc4a",
       "primary-dark": "#269234",
       secondary: "#ff9602",
+      "secondary-dark": "#FF7B22",
       "grey-lighter": "#f4f4f4",
       'grey-light': "#cccccc",
       grey: '#666666',
@@ -34,6 +35,7 @@ module.exports = {
       all: "all",
       color: "color",
       bg: "background-color",
+      border: "border-color",
       colors: ["color", "background-color", "border-color"],
       opacity: "opacity",
       transform: "transform"
