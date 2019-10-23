@@ -74,6 +74,9 @@ module.exports = {
       },
       minHeight: {
         "900": "900px"
+      },
+      opacity: {
+        '10': '0.1'
       }
     }
   },
