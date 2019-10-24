@@ -9,6 +9,10 @@ html {
     @apply font-body antialiased;
 }
 
+a {
+    @apply text-primary-dark underline;
+}
+
 .arrow {
     bottom: -15px;
     border-left: 15px solid transparent;
