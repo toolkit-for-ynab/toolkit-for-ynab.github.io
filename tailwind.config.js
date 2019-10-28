@@ -69,6 +69,9 @@ module.exports = {
         '98': '47rem',
         '100': '59rem',
       },
+      maxWidth: {
+        big: '1441px',
+      },
       inset: {
         "50": "50%"
       },
