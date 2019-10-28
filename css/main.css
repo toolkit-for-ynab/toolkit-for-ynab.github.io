@@ -6,28 +6,28 @@
 @import "tailwindcss/utilities";
 
 html {
-    @apply font-body antialiased;
+  @apply font-body antialiased;
 }
 
 a {
-    @apply text-primary-dark underline;
+  @apply text-primary-dark underline;
 }
 
 .arrow {
-    bottom: -15px;
-    border-left: 15px solid transparent;
-    border-right: 15px solid transparent;
-    border-top: 15px solid theme("colors.black-transparent");
-    border-bottom: 0;
+  bottom: -15px;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 15px solid theme("colors.black-transparent");
+  border-bottom: 0;
 }
 
 @screen lg {
-    .arrow {
-        bottom: auto;
-        right: -15px;
-        border-top: 15px solid transparent;
-        border-bottom: 15px solid transparent;
-        border-right: 0;
-        border-left: 15px solid theme("colors.black-transparent");
-    }
+  .arrow {
+    bottom: auto;
+    right: -15px;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 0;
+    border-left: 15px solid theme("colors.black-transparent");
+  }
 }
