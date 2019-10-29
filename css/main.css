@@ -25,6 +25,14 @@ a {
   @apply bg-grey-dark text-grey-lighter;
 }
 
+.tab-pane {
+  @apply absolute top-0 opacity-0;
+}
+
+.tab-pane.tab-pane-active {
+  @apply relative opacity-100;
+}
+
 @screen lg {
   .arrow {
     bottom: auto;

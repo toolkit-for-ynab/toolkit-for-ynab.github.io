@@ -1,7 +1,3 @@
-(function() {
-	scrollTo();
-})();
-
 function scrollTo() {
 	var links = document.getElementsByTagName('a');
 	for (var i = 0; i < links.length; i++) {
@@ -19,8 +15,12 @@ function scrollAnchors(e, respond = null) {
 	const targetAnchor = document.querySelector(targetID);
 	if (!targetAnchor) return;
 	const originalTop = distanceToTop(targetAnchor);
-	window.scrollBy({ top: originalTop, left: 0, behavior: 'smooth' });
-	const checkIfDone = setInterval(function() {
+	window.scrollBy({
+		top: originalTop,
+		left: 0,
+		behavior: 'smooth'
+	});
+	const checkIfDone = setInterval(function () {
 		const atBottom = window.innerHeight + window.pageYOffset >= document.body.offsetHeight - 2;
 		if (distanceToTop(targetAnchor) === 0 || atBottom) {
 			targetAnchor.tabIndex = '-1';
@@ -29,3 +29,30 @@ function scrollAnchors(e, respond = null) {
 		}
 	}, 100);
 }
+
+function triggerTab(event) {
+	// logic for tab items
+	document.querySelector(`#featuresTab`)
+		.querySelectorAll(".tab-item")
+		.forEach(item => {
+			item.classList.remove("tab-active")
+		})
+
+	document.querySelector(`#${event.target.id}`).classList.add("tab-active")
+
+	// logic for tab panes
+	document.querySelector(`#featuresTabContent`)
+		.querySelectorAll("[role='tabpanel']")
+		.forEach(item => {
+			item.classList.remove("tab-pane-active")
+		})
+
+	document.querySelector(`#tab-${event.target.id}`).classList.add("tab-pane-active")
+}
+
+(function () {
+	scrollTo();
+	document.querySelectorAll(".tab-item").forEach(item => {
+		item.addEventListener('click', triggerTab)
+	})
+})();

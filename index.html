@@ -64,189 +64,212 @@ layout: default
     <div class="container py-24">
         <div class="flex items-center justify-between flex-col md:flex-row">
             <h3 class="text-black text-3xl tracking-wide mb-2 md:mb-0">Features</h3>
-            <ul class="flex items-center flex-col md:flex-row">
-                <li><span class="uppercase font-bold block my-2 md:my-0 py-1 px-3 md:ml-3 no-underline text-grey text-grey tab-active">Featured</span></li>
-                <li><span class="uppercase font-bold block my-2 md:my-0 py-1 px-3 md:ml-3 no-underline text-grey text-grey">General</span></li>
-                <li><span class="uppercase font-bold block my-2 md:my-0 py-1 px-3 md:ml-3 no-underline text-grey text-grey">Accounts</span></li>
-                <li><span class="uppercase font-bold block my-2 md:my-0 py-1 px-3 md:ml-3 no-underline text-grey text-grey">Budget</span></li>
-                <li><span class="uppercase font-bold block my-2 md:my-0 py-1 px-3 md:ml-3 no-underline text-grey text-grey">Reports</span></li>
+            <ul class="flex items-center flex-col md:flex-row" id="featuresTab" role="tablist">
+                <li>
+                    <span class="uppercase font-bold block my-2 md:my-0 py-1 px-3 md:ml-3  cursor-pointer text-grey tab-item tab-active" id="one">Featured</span>
+                </li>
+                <li>
+                    <span class="uppercase font-bold block my-2 md:my-0 py-1 px-3 md:ml-3  cursor-pointer text-grey tab-item" id="two">General</span>
+                </li>
+                <li><span class="uppercase font-bold block my-2 md:my-0 py-1 px-3 md:ml-3  cursor-pointer text-grey tab-item" id="three">Accounts</span></li>
+                <li><span class="uppercase font-bold block my-2 md:my-0 py-1 px-3 md:ml-3  cursor-pointer text-grey tab-item" id="four">Budget</span></li>
+                <li><span class="uppercase font-bold block my-2 md:my-0 py-1 px-3 md:ml-3  cursor-pointer text-grey tab-item" id="five">Reports</span></li>
             </ul>
         </div>
-        <div class="tab-pane tab-pane-active">
-            <div class="flex flex-wrap justify-between items-center -mx-5">
-                <div class="w-full sm:w-1/2 lg:w-1/3 px-5 mt-12">
-                    <a href="/" class="relative block no-underline group">
-                        <img src="/images/f-screenshot-1.jpg" alt="feature screenshot" class="block w-full border border-grey-light">
-                        <div class="absolute inset-0 hidden group-hover:block">
-                            <span class="bg-black opacity-75 absolute inset-0"></span>
-                            <div class="flex items-center absolute inset-0 justify-center">
-                                <img src="images/icon-info.png" alt="">
-                                <h3 class="ml-4 uppercase font-semibold tracking-wide text-white text-lg">More Info</h3>
+        <div class="tab-content" id="featuresTabContent">
+            <div class="tab-pane tab-pane-active" role="tabpanel" id="tab-one">
+                <div class="flex flex-wrap justify-between items-center -mx-5">
+                    <div class="w-full sm:w-1/2 lg:w-1/3 px-5 mt-12">
+                        <a href="/" class="relative block no-underline group">
+                            <img src="/images/f-screenshot-1.jpg" alt="feature screenshot" class="block w-full border border-grey-light">
+                            <div class="absolute inset-0 hidden group-hover:block">
+                                <span class="bg-black opacity-75 absolute inset-0"></span>
+                                <div class="flex items-center absolute inset-0 justify-center">
+                                    <img src="images/icon-info.png" alt="">
+                                    <h3 class="ml-4 uppercase font-semibold tracking-wide text-white text-lg">More Info</h3>
+                                </div>
                             </div>
-                        </div>
-                    </a>
-                    <h3 class="text-lg font-semibold text-black mt-3">YNAB4-style Popup Calculator</h3>
+                        </a>
+                        <h3 class="text-lg font-semibold text-black mt-3">YNAB4-style Popup Calculator</h3>
+                    </div>
+                    <div class="w-full sm:w-1/2 lg:w-1/3 px-5 mt-12">
+                        <a href="/" class="relative block no-underline group">
+                            <img src="/images/f-screenshot-2.jpg" alt="feature screenshot" class="block w-full border border-grey-light">
+                            <div class="absolute inset-0 hidden group-hover:block">
+                                <span class="bg-black opacity-75 absolute inset-0"></span>
+                                <div class="flex items-center absolute inset-0 justify-center">
+                                    <img src="images/icon-info.png" alt="">
+                                    <h3 class="ml-4 uppercase font-semibold tracking-wide text-white text-lg">More Info</h3>
+                                </div>
+                            </div>
+                        </a>
+                        <h3 class="text-lg font-semibold text-black mt-3">Collapsable Side Menu</h3>
+                    </div>
+                    <div class="w-full sm:w-1/2 lg:w-1/3 px-5 mt-12">
+                        <a href="/" class="relative block no-underline group">
+                            <img src="/images/f-screenshot-3.jpg" alt="feature screenshot" class="block w-full border border-grey-light">
+                            <div class="absolute inset-0 hidden group-hover:block">
+                                <span class="bg-black opacity-75 absolute inset-0"></span>
+                                <div class="flex items-center absolute inset-0 justify-center">
+                                    <img src="images/icon-info.png" alt="">
+                                    <h3 class="ml-4 uppercase font-semibold tracking-wide text-white text-lg">More Info</h3>
+                                </div>
+                            </div>
+                        </a>
+                        <h3 class="text-lg font-semibold text-black mt-3">Spending by Category Report</h3>
+                    </div>
+                    <div class="w-full sm:w-1/2 lg:w-1/3 px-5 mt-12">
+                        <a href="/" class="relative block no-underline group">
+                            <img src="/images/f-screenshot-4.jpg" alt="feature screenshot" class="block w-full border border-grey-light">
+                            <div class="absolute inset-0 hidden group-hover:block">
+                                <span class="bg-black opacity-75 absolute inset-0"></span>
+                                <div class="flex items-center absolute inset-0 justify-center">
+                                    <img src="images/icon-info.png" alt="">
+                                    <h3 class="ml-4 uppercase font-semibold tracking-wide text-white text-lg">More Info</h3>
+                                </div>
+                            </div>
+                        </a>
+                        <h3 class="text-lg font-semibold text-black mt-3">Privacy Mode</h3>
+                    </div>
+                    <div class="w-full sm:w-1/2 lg:w-1/3 px-5 mt-12">
+                        <a href="/" class="relative block no-underline group">
+                            <img src="/images/f-screenshot-5.jpg" alt="feature screenshot" class="block w-full border border-grey-light">
+                            <div class="absolute inset-0 hidden group-hover:block">
+                                <span class="bg-black opacity-75 absolute inset-0"></span>
+                                <div class="flex items-center absolute inset-0 justify-center">
+                                    <img src="images/icon-info.png" alt="">
+                                    <h3 class="ml-4 uppercase font-semibold tracking-wide text-white text-lg">More Info</h3>
+                                </div>
+                            </div>
+                        </a>
+                        <h3 class="text-lg font-semibold text-black mt-3">Running Balance</h3>
+                    </div>
+                    <div class="w-full sm:w-1/2 lg:w-1/3 px-5 mt-12">
+                        <a href="/" class="relative block no-underline group">
+                            <img src="/images/f-screenshot-6.jpg" alt="feature screenshot" class="block w-full border border-grey-light">
+                            <div class="absolute inset-0 hidden group-hover:block">
+                                <span class="bg-black opacity-75 absolute inset-0"></span>
+                                <div class="flex items-center absolute inset-0 justify-center">
+                                    <img src="images/icon-info.png" alt="">
+                                    <h3 class="ml-4 uppercase font-semibold tracking-wide text-white text-lg">More Info</h3>
+                                </div>
+                            </div>
+                        </a>
+                        <h3 class="text-lg font-semibold text-black mt-3">Show Menu on Right Click</h3>
+                    </div>
                 </div>
-                <div class="w-full sm:w-1/2 lg:w-1/3 px-5 mt-12">
-                    <a href="/" class="relative block no-underline group">
-                        <img src="/images/f-screenshot-2.jpg" alt="feature screenshot" class="block w-full border border-grey-light">
-                        <div class="absolute inset-0 hidden group-hover:block">
-                            <span class="bg-black opacity-75 absolute inset-0"></span>
-                            <div class="flex items-center absolute inset-0 justify-center">
-                                <img src="images/icon-info.png" alt="">
-                                <h3 class="ml-4 uppercase font-semibold tracking-wide text-white text-lg">More Info</h3>
-                            </div>
-                        </div>
+                <div class="flex flex-wrap -mx-5 mt-12">
+                    <a href="/" class="w-full lg:w-1/3 px-5 flex no-underline">
+                        <span class="border-b border-grey-light flex items-center justify-between group text-grey-dark py-3 w-full">
+                            <span>Budget Quick Switch</span>
+                            <img src="images/icon-info-small.png" alt="info icon" class="hidden group-hover:block">
+                        </span>
                     </a>
-                    <h3 class="text-lg font-semibold text-black mt-3">Collapsable Side Menu</h3>
-                </div>
-                <div class="w-full sm:w-1/2 lg:w-1/3 px-5 mt-12">
-                    <a href="/" class="relative block no-underline group">
-                        <img src="/images/f-screenshot-3.jpg" alt="feature screenshot" class="block w-full border border-grey-light">
-                        <div class="absolute inset-0 hidden group-hover:block">
-                            <span class="bg-black opacity-75 absolute inset-0"></span>
-                            <div class="flex items-center absolute inset-0 justify-center">
-                                <img src="images/icon-info.png" alt="">
-                                <h3 class="ml-4 uppercase font-semibold tracking-wide text-white text-lg">More Info</h3>
-                            </div>
-                        </div>
+                    <a href="/" class="w-full lg:w-1/3 px-5 flex no-underline">
+                        <span class="border-b border-grey-light flex items-center justify-between group text-grey-dark py-3 w-full">
+                            <span>Color Blind Mode</span>
+                            <img src="images/icon-info-small.png" alt="info icon" class="hidden group-hover:block">
+                        </span>
                     </a>
-                    <h3 class="text-lg font-semibold text-black mt-3">Spending by Category Report</h3>
-                </div>
-                <div class="w-full sm:w-1/2 lg:w-1/3 px-5 mt-12">
-                    <a href="/" class="relative block no-underline group">
-                        <img src="/images/f-screenshot-4.jpg" alt="feature screenshot" class="block w-full border border-grey-light">
-                        <div class="absolute inset-0 hidden group-hover:block">
-                            <span class="bg-black opacity-75 absolute inset-0"></span>
-                            <div class="flex items-center absolute inset-0 justify-center">
-                                <img src="images/icon-info.png" alt="">
-                                <h3 class="ml-4 uppercase font-semibold tracking-wide text-white text-lg">More Info</h3>
-                            </div>
-                        </div>
+                    <a href="/" class="w-full lg:w-1/3 px-5 flex no-underline">
+                        <span class="border-b border-grey-light flex items-center justify-between group text-grey-dark py-3 w-full">
+                            <span>Hide Age of Money Calculation</span>
+                            <img src="images/icon-info-small.png" alt="info icon" class="hidden group-hover:block">
+                        </span>
                     </a>
-                    <h3 class="text-lg font-semibold text-black mt-3">Privacy Mode</h3>
-                </div>
-                <div class="w-full sm:w-1/2 lg:w-1/3 px-5 mt-12">
-                    <a href="/" class="relative block no-underline group">
-                        <img src="/images/f-screenshot-5.jpg" alt="feature screenshot" class="block w-full border border-grey-light">
-                        <div class="absolute inset-0 hidden group-hover:block">
-                            <span class="bg-black opacity-75 absolute inset-0"></span>
-                            <div class="flex items-center absolute inset-0 justify-center">
-                                <img src="images/icon-info.png" alt="">
-                                <h3 class="ml-4 uppercase font-semibold tracking-wide text-white text-lg">More Info</h3>
-                            </div>
-                        </div>
+                    <a href="/" class="w-full lg:w-1/3 px-5 flex no-underline">
+                        <span class="border-b border-grey-light flex items-center justify-between group text-grey-dark py-3 w-full">
+                            <span>Hide Help (?) Button</span>
+                            <img src="images/icon-info-small.png" alt="info icon" class="hidden group-hover:block">
+                        </span>
                     </a>
-                    <h3 class="text-lg font-semibold text-black mt-3">Running Balance</h3>
-                </div>
-                <div class="w-full sm:w-1/2 lg:w-1/3 px-5 mt-12">
-                    <a href="/" class="relative block no-underline group">
-                        <img src="/images/f-screenshot-6.jpg" alt="feature screenshot" class="block w-full border border-grey-light">
-                        <div class="absolute inset-0 hidden group-hover:block">
-                            <span class="bg-black opacity-75 absolute inset-0"></span>
-                            <div class="flex items-center absolute inset-0 justify-center">
-                                <img src="images/icon-info.png" alt="">
-                                <h3 class="ml-4 uppercase font-semibold tracking-wide text-white text-lg">More Info</h3>
-                            </div>
-                        </div>
+                    <a href="/" class="w-full lg:w-1/3 px-5 flex no-underline">
+                        <span class="border-b border-grey-light flex items-center justify-between group text-grey-dark py-3 w-full">
+                            <span>Hide Referral Banner</span>
+                            <img src="images/icon-info-small.png" alt="info icon" class="hidden group-hover:block">
+                        </span>
                     </a>
-                    <h3 class="text-lg font-semibold text-black mt-3">Show Menu on Right Click</h3>
+                    <a href="/" class="w-full lg:w-1/3 px-5 flex no-underline">
+                        <span class="border-b border-grey-light flex items-center justify-between group text-grey-dark py-3 w-full">
+                            <span>Printing Improvements</span>
+                            <img src="images/icon-info-small.png" alt="info icon" class="hidden group-hover:block">
+                        </span>
+                    </a>
+                    <a href="/" class="w-full lg:w-1/3 px-5 flex no-underline">
+                        <span class="border-b border-grey-light flex items-center justify-between group text-grey-dark py-3 w-full">
+                            <span>Show / Hide Intercom</span>
+                            <img src="images/icon-info-small.png" alt="info icon" class="hidden group-hover:block">
+                        </span>
+                    </a>
+                    <a href="/" class="w-full lg:w-1/3 px-5 flex no-underline">
+                        <span class="border-b border-grey-light flex items-center justify-between group text-grey-dark py-3 w-full">
+                            <span>Square Negatives Mode</span>
+                            <img src="images/icon-info-small.png" alt="info icon" class="hidden group-hover:block">
+                        </span>
+                    </a>
+                    <a href="/" class="w-full lg:w-1/3 px-5 flex no-underline">
+                        <span class="border-b border-grey-light flex items-center justify-between group text-grey-dark py-3 w-full">
+                            <span>Account Name Height Adjustments</span>
+                            <img src="images/icon-info-small.png" alt="info icon" class="hidden group-hover:block">
+                        </span>
+                    </a>
+                    <a href="/" class="w-full lg:w-1/3 px-5 flex no-underline">
+                        <span class="border-b border-grey-light flex items-center justify-between group text-grey-dark py-3 w-full">
+                            <span>Better Scrollbars</span>
+                            <img src="images/icon-info-small.png" alt="info icon" class="hidden group-hover:block">
+                        </span>
+                    </a>
+                    <a href="/" class="w-full lg:w-1/3 px-5 flex no-underline">
+                        <span class="border-b border-grey-light flex items-center justify-between group text-grey-dark py-3 w-full">
+                            <span>Hide Account Balances</span>
+                            <img src="images/icon-info-small.png" alt="info icon" class="hidden group-hover:block">
+                        </span>
+                    </a>
+                    <a href="/" class="w-full lg:w-1/3 px-5 flex no-underline">
+                        <span class="border-b border-grey-light flex items-center justify-between group text-grey-dark py-3 w-full">
+                            <span>Change Interface Font</span>
+                            <img src="images/icon-info-small.png" alt="info icon" class="hidden group-hover:block">
+                        </span>
+                    </a>
+                    <a href="/" class="w-full lg:w-1/3 px-5 flex no-underline">
+                        <span class="border-b border-grey-light flex items-center justify-between group text-grey-dark py-3 w-full">
+                            <span>Non-English Language Support</span>
+                            <img src="images/icon-info-small.png" alt="info icon" class="hidden group-hover:block">
+                        </span>
+                    </a>
+                    <a href="/" class="w-full lg:w-1/3 px-5 flex no-underline">
+                        <span class="border-b border-grey-light flex items-center justify-between group text-grey-dark py-3 w-full">
+                            <span>Change Navigation Tabs Height</span>
+                            <img src="images/icon-info-small.png" alt="info icon" class="hidden group-hover:block">
+                        </span>
+                    </a>
+                    <a href="/" class="w-full lg:w-1/3 px-5 flex no-underline">
+                        <span class="border-b border-grey-light flex items-center justify-between text-grey-dark py-3 w-full italic">
+                            And many more!
+                        </span>
+                    </a>
                 </div>
             </div>
-            <div class="flex flex-wrap -mx-5 mt-12">
-                <a href="/" class="w-full lg:w-1/3 px-5 flex no-underline">
-                    <span class="border-b border-grey-light flex items-center justify-between group text-grey-dark py-3 w-full">
-                        <span>Budget Quick Switch</span>
-                        <img src="images/icon-info-small.png" alt="info icon" class="hidden group-hover:block">
-                    </span>
-                </a>
-                <a href="/" class="w-full lg:w-1/3 px-5 flex no-underline">
-                    <span class="border-b border-grey-light flex items-center justify-between group text-grey-dark py-3 w-full">
-                        <span>Color Blind Mode</span>
-                        <img src="images/icon-info-small.png" alt="info icon" class="hidden group-hover:block">
-                    </span>
-                </a>
-                <a href="/" class="w-full lg:w-1/3 px-5 flex no-underline">
-                    <span class="border-b border-grey-light flex items-center justify-between group text-grey-dark py-3 w-full">
-                        <span>Hide Age of Money Calculation</span>
-                        <img src="images/icon-info-small.png" alt="info icon" class="hidden group-hover:block">
-                    </span>
-                </a>
-                <a href="/" class="w-full lg:w-1/3 px-5 flex no-underline">
-                    <span class="border-b border-grey-light flex items-center justify-between group text-grey-dark py-3 w-full">
-                        <span>Hide Help (?) Button</span>
-                        <img src="images/icon-info-small.png" alt="info icon" class="hidden group-hover:block">
-                    </span>
-                </a>
-                <a href="/" class="w-full lg:w-1/3 px-5 flex no-underline">
-                    <span class="border-b border-grey-light flex items-center justify-between group text-grey-dark py-3 w-full">
-                        <span>Hide Referral Banner</span>
-                        <img src="images/icon-info-small.png" alt="info icon" class="hidden group-hover:block">
-                    </span>
-                </a>
-                <a href="/" class="w-full lg:w-1/3 px-5 flex no-underline">
-                    <span class="border-b border-grey-light flex items-center justify-between group text-grey-dark py-3 w-full">
-                        <span>Printing Improvements</span>
-                        <img src="images/icon-info-small.png" alt="info icon" class="hidden group-hover:block">
-                    </span>
-                </a>
-                <a href="/" class="w-full lg:w-1/3 px-5 flex no-underline">
-                    <span class="border-b border-grey-light flex items-center justify-between group text-grey-dark py-3 w-full">
-                        <span>Show / Hide Intercom</span>
-                        <img src="images/icon-info-small.png" alt="info icon" class="hidden group-hover:block">
-                    </span>
-                </a>
-                <a href="/" class="w-full lg:w-1/3 px-5 flex no-underline">
-                    <span class="border-b border-grey-light flex items-center justify-between group text-grey-dark py-3 w-full">
-                        <span>Square Negatives Mode</span>
-                        <img src="images/icon-info-small.png" alt="info icon" class="hidden group-hover:block">
-                    </span>
-                </a>
-                <a href="/" class="w-full lg:w-1/3 px-5 flex no-underline">
-                    <span class="border-b border-grey-light flex items-center justify-between group text-grey-dark py-3 w-full">
-                        <span>Account Name Height Adjustments</span>
-                        <img src="images/icon-info-small.png" alt="info icon" class="hidden group-hover:block">
-                    </span>
-                </a>
-                <a href="/" class="w-full lg:w-1/3 px-5 flex no-underline">
-                    <span class="border-b border-grey-light flex items-center justify-between group text-grey-dark py-3 w-full">
-                        <span>Better Scrollbars</span>
-                        <img src="images/icon-info-small.png" alt="info icon" class="hidden group-hover:block">
-                    </span>
-                </a>
-                <a href="/" class="w-full lg:w-1/3 px-5 flex no-underline">
-                    <span class="border-b border-grey-light flex items-center justify-between group text-grey-dark py-3 w-full">
-                        <span>Hide Account Balances</span>
-                        <img src="images/icon-info-small.png" alt="info icon" class="hidden group-hover:block">
-                    </span>
-                </a>
-                <a href="/" class="w-full lg:w-1/3 px-5 flex no-underline">
-                    <span class="border-b border-grey-light flex items-center justify-between group text-grey-dark py-3 w-full">
-                        <span>Change Interface Font</span>
-                        <img src="images/icon-info-small.png" alt="info icon" class="hidden group-hover:block">
-                    </span>
-                </a>
-                <a href="/" class="w-full lg:w-1/3 px-5 flex no-underline">
-                    <span class="border-b border-grey-light flex items-center justify-between group text-grey-dark py-3 w-full">
-                        <span>Non-English Language Support</span>
-                        <img src="images/icon-info-small.png" alt="info icon" class="hidden group-hover:block">
-                    </span>
-                </a>
-                <a href="/" class="w-full lg:w-1/3 px-5 flex no-underline">
-                    <span class="border-b border-grey-light flex items-center justify-between group text-grey-dark py-3 w-full">
-                        <span>Change Navigation Tabs Height</span>
-                        <img src="images/icon-info-small.png" alt="info icon" class="hidden group-hover:block">
-                    </span>
-                </a>
-                <a href="/" class="w-full lg:w-1/3 px-5 flex no-underline">
-                    <span class="border-b border-grey-light flex items-center justify-between text-grey-dark py-3 w-full italic">
-                        And many more!
-                    </span>
-                </a>
+            <div class="tab-pane" role="tabpanel" id="tab-two">
+                <div class="mt-12">
+                    Tab two info here
+                </div>
             </div>
-        </div>
-        <div class="tab-pane hidden">
-            Tab info here
+            <div class="tab-pane" role="tabpanel" id="tab-three">
+                <div class="mt-12">
+                    Tab three info here
+                </div>
+            </div>
+            <div class="tab-pane" role="tabpanel" id="tab-four">
+                <div class="mt-12">
+                    Tab four info here
+                </div>
+            </div>
+            <div class="tab-pane" role="tabpanel" id="tab-five">
+                <div class="mt-12">
+                    Tab five info here
+                </div>
+            </div>
         </div>
         <div class="flex justify-center mt-20">
             <a href="https://chrome.google.com/webstore/detail/toolkit-for-ynab/lmhdkkhepllpnondndgpgclfjnlofgjl?hl=en"
