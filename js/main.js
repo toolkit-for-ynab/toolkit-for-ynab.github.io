@@ -50,9 +50,10 @@ function triggerTab(event) {
 	document.querySelector(`#tab-${event.target.id}`).classList.add("tab-pane-active")
 }
 
-(function () {
-	scrollTo();
-	document.querySelectorAll(".tab-item").forEach(item => {
-		item.addEventListener('click', triggerTab)
-	})
-})();
+// Activates smooth scroll functionality
+scrollTo();
+
+// Activates tab functionality
+document.querySelectorAll(".tab-item").forEach(item => {
+	item.addEventListener('click', triggerTab)
+})
