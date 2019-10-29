@@ -21,6 +21,10 @@ a {
   border-bottom: 0;
 }
 
+.tab-active {
+  @apply bg-grey-dark text-grey-lighter;
+}
+
 @screen lg {
   .arrow {
     bottom: auto;
