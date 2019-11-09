@@ -1,0 +1,45 @@
+---
+---
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+html {
+  @apply font-body antialiased;
+}
+
+a {
+  @apply text-primary-dark underline;
+}
+
+.arrow {
+  bottom: -15px;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 15px solid theme("colors.black-transparent");
+  border-bottom: 0;
+}
+
+.tab-active {
+  @apply bg-grey-dark text-grey-lighter;
+}
+
+.tab-pane {
+  @apply absolute top-0 opacity-0;
+}
+
+.tab-pane.tab-pane-active {
+  @apply relative opacity-100;
+}
+
+@screen lg {
+  .arrow {
+    bottom: auto;
+    right: -15px;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 0;
+    border-left: 15px solid theme("colors.black-transparent");
+  }
+}

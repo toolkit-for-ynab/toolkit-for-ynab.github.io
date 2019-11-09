@@ -2,11 +2,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    
+
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-    
+
     <meta name="description" content="{{ site.description }}">
-    
+
     <!-- social -->
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <meta property="og:locale" content="en_US" />
@@ -16,12 +16,12 @@
     <meta property="og:url" content="{{ site.url }}" />
     <meta property="og:site_name" content="Toolkit for YNAB" />
     <meta property="og:image" content="/images/social.png" />
-    
+
     <!-- fonts and styling -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700">
-    <link rel="stylesheet" type="text/css" href="{{ "/css/normalize.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.3/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" type="text/css" href="{{ "/css/main.css" | prepend: site.baseurl }}">
-    
+
     <!-- favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
